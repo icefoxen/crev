@@ -197,10 +197,10 @@ else your typically host your code. Customarily the repository should be called 
 Note: `cargo-crev` requires the master branch to already exist, so the repository you have created
 has to contains at least one existing commit.
 
-Then run `cargo crev id new` like this:
+Then run `cargo crev new id` like this:
 
 ```text
-$ cargo crev id new --url https://github.com/YOUR-USERNAME/crev-proofs
+$ cargo crev new id --url https://github.com/YOUR-USERNAME/crev-proofs
 https://github.com/YOUR-USERNAME/crev-proofs cloned to /home/YOUR-USERNAME/.config/crev/proofs/Sp87YXeDKUyh4jImm23bCp1Gr-6eNkMoQogWbftNobQ
 CrevID will be protected by a passphrase.
 There's no way to recover your CrevID if you forget your passphrase.
@@ -459,7 +459,7 @@ As you might have already noticed, the document you are editing is not a complet
 *review proof*. A lot of details will be filled automatically by `cargo crev`.
 
 `crev` proofs are Yaml documents, wrapped in GPG-like separatos, and signed using
-private key generated during `cargo crev id new`.
+private key generated during `cargo crev new id`.
 
 Yaml is a popular serialization format. It is easy to read and easy to parse. It also
 makes the document format easily extendable in the future.
